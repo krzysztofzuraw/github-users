@@ -1,3 +1,5 @@
+"use strict";
+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const paths = require("./paths");
@@ -13,9 +15,10 @@ module.exports = {
   },
   output: {
     path: paths.appBuild,
-    filename: "bundle.js"
+    filename: "static/js/[name].js",
+    publicPath: "/"
   },
   plugins: [
-    new HtmlWebpackPlugin({ inject: true, template: "public/index.html" })
+    new HtmlWebpackPlugin({ inject: true, template: paths.appHtmlIndexFile })
   ]
 };
