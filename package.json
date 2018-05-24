@@ -5,11 +5,17 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --config config/webpack.config.dev.js --hot",
     "build": "webpack --mode production --config config/webpack.config.prod.js",
-    "tsc": "tsc"
+    "tsc": "tsc --project . --noEmit",
+    "lint": "tslint --project .",
+    "reinstall": "rm -rf node_modules && yarn install"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "author": "Krzysztof Żuraw",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "8.0.0",
     "@types/react": "^16.3.14",
     "@types/react-dom": "^16.0.5",
     "html-webpack-plugin": "^3.2.0",
@@ -29,7 +35,6 @@
   "prettier": {
     "printWidth": 100,
     "trailingComma": "es5",
-    "singleQuote": true,
     "semi": true
   }
 }
