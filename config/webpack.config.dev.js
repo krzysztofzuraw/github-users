@@ -8,17 +8,16 @@ module.exports = {
   entry: paths.appIndexFile,
   devtool: "inline-source-map",
   module: {
-    rules: [{ test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ }]
+    rules: [{ test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ }],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".json"]
+    extensions: [".tsx", ".ts", ".js", ".json"],
+    alias: { "@src": paths.appSrc, "@locales": paths.appLocales },
   },
   output: {
     path: paths.appBuild,
     filename: "static/js/[name].js",
-    publicPath: "/"
+    publicPath: "/",
   },
-  plugins: [
-    new HtmlWebpackPlugin({ inject: true, template: paths.appHtmlIndexFile })
-  ]
+  plugins: [new HtmlWebpackPlugin({ inject: true, template: paths.appHtmlIndexFile })],
 };

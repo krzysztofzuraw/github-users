@@ -1,4 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-ReactDOM.render(<div>Working!With Hot!</div>, document.getElementById("root") as HTMLElement);
+import { Main } from "@src/pages";
+
+ReactDOM.render(<Main />, document.getElementById("root") as HTMLElement);

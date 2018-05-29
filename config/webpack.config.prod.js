@@ -7,15 +7,16 @@ module.exports = {
   devtool: "inline-source-map",
   entry: paths.appIndexFile,
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".json"]
+    extensions: [".tsx", ".ts", ".js", ".json"],
+    alias: { "@src": paths.appSrc, "@locales": paths.appLocales },
   },
   module: {
-    rules: [{ test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ }]
+    rules: [{ test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ }],
   },
   output: {
     path: paths.appBuild,
     filename: "static/js/[name].[hash].js",
-    publicPath: "/"
+    publicPath: "/",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -31,12 +32,12 @@ module.exports = {
         keepClosingSlash: true,
         minifyJS: true,
         minifyCSS: true,
-        minifyURLs: true
-      }
+        minifyURLs: true,
+      },
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false, comparisons: false },
-      output: { comments: false, ascii_only: true }
-    })
-  ]
+      output: { comments: false, ascii_only: true },
+    }),
+  ],
 };

@@ -11,5 +11,7 @@ module.exports = {
   appPublic: resolveApp("public"),
   appIndexFile: resolveApp("src/index.tsx"),
   appHtmlIndexFile: resolveApp("public/index.html"),
-  appNodeModules: resolveApp("node_modules")
+  appNodeModules: resolveApp("node_modules"),
+  appSrc: resolveApp("src"),
+  appLocales: resolveApp("locales"),
 };
