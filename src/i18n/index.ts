@@ -1,0 +1,1 @@
+export { AppLocaleProvider } from "./providers";
