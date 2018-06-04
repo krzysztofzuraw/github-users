@@ -8,7 +8,7 @@ module.exports = {
   entry: paths.appIndexFile,
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"],
-    alias: { "@src": paths.appSrc, "@locales": paths.appLocales },
+    alias: { "@src": paths.appSrc, "@locales": paths.appLocales, "@styles": paths.appStyles },
   },
   module: {
     rules: [

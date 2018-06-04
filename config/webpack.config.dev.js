@@ -11,11 +11,19 @@ module.exports = {
     rules: [
       { test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      {
+        test: /\.less$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "less-loader", options: { javascriptEnabled: true } },
+        ],
+      },
     ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"],
-    alias: { "@src": paths.appSrc, "@locales": paths.appLocales },
+    alias: { "@src": paths.appSrc, "@locales": paths.appLocales, "@styles": paths.appStyles },
   },
   output: {
     path: paths.appBuild,

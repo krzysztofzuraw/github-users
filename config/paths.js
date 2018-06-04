@@ -14,4 +14,5 @@ module.exports = {
   appNodeModules: resolveApp("node_modules"),
   appSrc: resolveApp("src"),
   appLocales: resolveApp("locales"),
+  appStyles: resolveApp("styles"),
 };
