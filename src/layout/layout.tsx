@@ -1,13 +1,12 @@
 import { Layout } from "antd";
-import { setupPage } from "csstips";
 import * as React from "react";
-import { FormattedMessage } from "react-intl";
 import { style } from "typestyle";
+
+import { MainCard } from "@src/components";
 
 import "@styles/antd.default.less";
 
 const styles = {
-  content: style({ padding: "0 50px", backgroundColor: "#fff" }),
   layout: style({
     alignItems: "center",
     backgroundColor: "#dfdbe5",
@@ -20,7 +19,7 @@ const styles = {
 export const MainLayout: React.SFC = () => {
   return (
     <Layout className={styles.layout}>
-      <div className={styles.content}>Content</div>
+      <MainCard />
     </Layout>
   );
 };
