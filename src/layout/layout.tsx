@@ -2,23 +2,25 @@ import { Layout } from "antd";
 import { setupPage } from "csstips";
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
-import { fontFace } from "typestyle";
+import { style } from "typestyle";
 
 import "@styles/antd.default.less";
 
-setupPage("#root");
+const styles = {
+  content: style({ padding: "0 50px", backgroundColor: "#fff" }),
+  layout: style({
+    alignItems: "center",
+    backgroundColor: "#dfdbe5",
+    display: "flex",
+    height: "100vh",
+    justifyContent: "center",
+  }),
+};
 
 export const MainLayout: React.SFC = () => {
   return (
-    <Layout>
-      <Layout.Header>
-        <FormattedMessage id="Header.title" />
-      </Layout.Header>
-      <Layout>
-        <Layout.Sider>Sider</Layout.Sider>
-        <Layout.Content>Content</Layout.Content>
-      </Layout>
-      <Layout.Footer>Footer</Layout.Footer>
+    <Layout className={styles.layout}>
+      <div className={styles.content}>Content</div>
     </Layout>
   );
 };
