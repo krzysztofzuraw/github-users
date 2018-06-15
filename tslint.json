@@ -5,7 +5,22 @@
   "rules": {
     "arrow-parens": false,
     "max-line-length": [true, 100],
-    "no-unused-variable": [true, "react"]
+    "no-unused-variable": [true, "react"],
+    "member-access": false,
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "ignore",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
+      }
+    ],
+    "member-ordering": [true, { "order": "fields-first" }]
   },
   "rulesDirectory": []
 }
