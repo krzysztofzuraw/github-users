@@ -1,4 +1,4 @@
-import cuid from "cuid";
+import * as uuid from "uuid";
 
 export interface IUserDTO {
   id: string;
@@ -31,7 +31,7 @@ export interface IUser {
 export class User implements IUser {
   // prettier-ignore
   "constructor": typeof User;
-  id: string = cuid();
+  id: string = uuid.v1();
 
   constructor(
     public login: string,
