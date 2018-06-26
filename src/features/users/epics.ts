@@ -12,7 +12,9 @@ const fetchUsers: Epic<Types.RootAction, Types.RootState, Types.Services> = (
   action$.ofType(usersConstants.GET_USERS_REQUEST).switchMap(() =>
     Observable.from(githubService.getUsers())
       .map(response => usersActions.getUsersSuccess(response))
-      .catch(error => Observable.of(usersActions.getUsersError(error)))
+      .catch(error =>
+        Observable.of(usersActions.getUsersError(error)).do(() => loggerService.log(error))
+      )
   );
 
 export default combineEpics(fetchUsers);

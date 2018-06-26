@@ -1,3 +1,5 @@
 import { combineEpics } from "redux-observable";
 
-export default combineEpics();
+import { userEpic } from "@src/features/users";
+
+export default combineEpics(userEpic);

@@ -1,7 +1,15 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import "rxjs";
 
 import { Main } from "@src/pages";
-import "@src/rxjs-imports";
+import store from "@src/store";
 
-ReactDOM.render(<Main />, document.getElementById("root") as HTMLElement);
+const Root = (
+  <Provider store={store}>
+    <Main />
+  </Provider>
+);
+
+ReactDOM.render(Root, document.getElementById("root") as HTMLElement);
