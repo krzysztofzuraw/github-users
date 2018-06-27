@@ -1,3 +1,6 @@
 {
-  "Header.title": "Season calendar"
+  "main.card.header": "Github users list",
+  "list.button.reload": "Refresh",
+  "list.link.profile": "Profil",
+  "list.description.default": "No description"
 }

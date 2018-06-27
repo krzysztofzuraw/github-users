@@ -1,5 +1,6 @@
 import { Avatar, Button, List as AntList } from "antd";
 import * as React from "react";
+import { FormattedMessage } from "react-intl";
 import { style as tss } from "typestyle";
 
 import { IUser } from "@src/models";
@@ -26,16 +27,28 @@ export const List: React.SFC<IProps> = ({ items, loading, onReload }) => {
       dataSource={items}
       loadMore={
         <div className={styles.actions}>
-          <Button onClick={onReload}>Refresh</Button>
+          <Button onClick={onReload}>
+            <FormattedMessage id="list.button.reload" defaultMessage="Refresh" />
+          </Button>
         </div>
       }
       loading={loading}
       renderItem={(item: IUser) => (
-        <AntList.Item actions={[<a href={item.htmlUrl}>Profile</a>]}>
+        <AntList.Item
+          actions={[
+            <a href={item.htmlUrl}>
+              <FormattedMessage id="list.link.profile" defaultMessage="Profile" />
+            </a>,
+          ]}
+        >
           <AntList.Item.Meta
             avatar={<Avatar src={item.avatarUrl} />}
             title={item.login}
-            description={item.bio || "No description"}
+            description={
+              item.bio || (
+                <FormattedMessage id="list.description.default" defaultMessage="No description" />
+              )
+            }
           />
         </AntList.Item>
       )}

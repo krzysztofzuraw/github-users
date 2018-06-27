@@ -1,1 +1,6 @@
-{ "Header.title": "Kalendarz sezonowosci" }
+{
+  "main.card.header": "Lista uzytkowników z Githuba",
+  "list.button.reload": "Przeładuj",
+  "list.link.profile": "Profil",
+  "list.description.default": "Brak opisu"
+}
