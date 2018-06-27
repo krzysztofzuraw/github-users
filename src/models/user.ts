@@ -3,7 +3,7 @@ import * as uuid from "uuid";
 export interface IUserDTO {
   id: string;
   login: string;
-  url: string;
+  html_url: string;
   avatar_url: string;
   blog: string;
   bio: string;
@@ -18,7 +18,7 @@ export interface IUser {
 
   id: string;
   login: string;
-  url: string;
+  htmlUrl: string;
   avatarUrl: string;
   name: string;
   blog: string;
@@ -35,7 +35,7 @@ export class User implements IUser {
 
   constructor(
     public login: string,
-    public url: string,
+    public htmlUrl: string,
     public avatarUrl: string,
     public name: string,
     public blog: string,
@@ -46,7 +46,7 @@ export class User implements IUser {
   static create(dto: IUserDTO): IUser {
     const model = new User(
       dto.login,
-      dto.url,
+      dto.html_url,
       dto.avatar_url,
       dto.name,
       dto.blog,
@@ -62,11 +62,11 @@ export class User implements IUser {
       avatar_url: this.avatarUrl,
       bio: this.bio,
       blog: this.blog,
+      html_url: this.htmlUrl,
       id: this.id,
       login: this.login,
       name: this.name,
       public_repos: this.publicRepos,
-      url: this.url,
     };
   }
 }
