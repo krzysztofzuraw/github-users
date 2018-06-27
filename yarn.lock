@@ -28,9 +28,24 @@
     "@types/node" "*"
     "@types/react" "*"
 
-"@types/react-intl@^2.3.8":
+"@types/react-intl-redux@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@types/react-intl-redux/-/react-intl-redux-0.1.10.tgz#acd8202cde4a4ffce0dc2dce6505391e934b4eae"
+  dependencies:
+    "@types/react-intl" "*"
+    "@types/react-redux" "*"
+    redux "^3.6.0"
+
+"@types/react-intl@*":
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/@types/react-intl/-/react-intl-2.3.8.tgz#de56b21b67e39df24bc0fc7e67b437976b666919"
+
+"@types/react-redux@*":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-6.0.3.tgz#7e8a86cce1c453166056bce9d4eb5cab5a2cfe13"
+  dependencies:
+    "@types/react" "*"
+    redux "^4.0.0"
 
 "@types/react-redux@^6.0.2":
   version "6.0.2"
@@ -5568,6 +5583,12 @@ react-hot-loader@^4.2.0:
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
 
+react-intl-redux@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-intl-redux/-/react-intl-redux-2.0.0.tgz#172116ad4a6a4fc5943ae5c96de569467d37a8da"
+  dependencies:
+    prop-types "^15.6.1"
+
 react-intl@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.4.0.tgz#66c14dc9df9a73b2fbbfbd6021726e80a613eb15"
@@ -5739,7 +5760,7 @@ redux-observable@^0.19.0:
   dependencies:
     gitbook-plugin-github "^2.0.0"
 
-redux@3.7.2:
+redux@3.7.2, redux@^3.6.0:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
   dependencies:

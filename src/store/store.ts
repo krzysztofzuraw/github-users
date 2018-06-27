@@ -6,6 +6,8 @@ import rootEpic from "./root-epic";
 import rootReducer from "./root-reducer";
 import { composeEnhancers } from "./utils";
 
+import plMessages from "@locales/pl.json";
+
 export const epicMiddleware = createEpicMiddleware(rootEpic, { dependencies: services });
 
 const configureStore = (initialState?: object) => {
@@ -14,6 +16,14 @@ const configureStore = (initialState?: object) => {
   return createStore(rootReducer, initialState!, enhancer);
 };
 
-const store = configureStore();
+const initialStateWithIntl = {
+  intl: {
+    defaultLocale: "en",
+    locale: "pl",
+    messages: { ...plMessages },
+  },
+};
+
+const store = configureStore(initialStateWithIntl);
 
 export default store;

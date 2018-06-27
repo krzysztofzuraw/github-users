@@ -27,7 +27,7 @@ export const List: React.SFC<IProps> = ({ items, loading, onReload }) => {
       dataSource={items}
       loadMore={
         <div className={styles.actions}>
-          <Button onClick={onReload}>
+          <Button onClick={onReload} loading={loading}>
             <FormattedMessage id="list.button.reload" defaultMessage="Refresh" />
           </Button>
         </div>
