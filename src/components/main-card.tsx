@@ -4,10 +4,8 @@ import { FormattedMessage } from "react-intl";
 
 import { ListContainer } from "@src/containers";
 
-export const MainCard: React.SFC = () => {
-  return (
-    <Card title={<FormattedMessage id="main.card.header" defaultMessage="Github users list" />}>
-      <ListContainer />
-    </Card>
-  );
-};
+export const MainCard: React.SFC = () => (
+  <Card title={<FormattedMessage id="main.card.header" defaultMessage="Github users list" />}>
+    <ListContainer />
+  </Card>
+);

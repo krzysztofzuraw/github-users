@@ -20,38 +20,36 @@ const styles = {
   }),
 };
 
-export const List: React.SFC<IProps> = ({ items, loading, onReload }) => {
-  return (
-    <AntList
-      itemLayout="horizontal"
-      dataSource={items}
-      loadMore={
-        <div className={styles.actions}>
-          <Button onClick={onReload} loading={loading}>
-            <FormattedMessage id="list.button.reload" defaultMessage="Refresh" />
-          </Button>
-        </div>
-      }
-      loading={loading}
-      renderItem={(item: IUser) => (
-        <AntList.Item
-          actions={[
-            <a href={item.htmlUrl}>
-              <FormattedMessage id="list.link.profile" defaultMessage="Profile" />
-            </a>,
-          ]}
-        >
-          <AntList.Item.Meta
-            avatar={<Avatar src={item.avatarUrl} />}
-            title={item.login}
-            description={
-              item.bio || (
-                <FormattedMessage id="list.description.default" defaultMessage="No description" />
-              )
-            }
-          />
-        </AntList.Item>
-      )}
-    />
-  );
-};
+export const List: React.SFC<IProps> = ({ items, loading, onReload }) => (
+  <AntList
+    itemLayout="horizontal"
+    dataSource={items}
+    loadMore={
+      <div className={styles.actions}>
+        <Button onClick={onReload} loading={loading}>
+          <FormattedMessage id="list.button.reload" defaultMessage="Refresh" />
+        </Button>
+      </div>
+    }
+    loading={loading}
+    renderItem={(item: IUser) => (
+      <AntList.Item
+        actions={[
+          <a href={item.htmlUrl}>
+            <FormattedMessage id="list.link.profile" defaultMessage="Profile" />
+          </a>,
+        ]}
+      >
+        <AntList.Item.Meta
+          avatar={<Avatar src={item.avatarUrl} />}
+          title={item.login}
+          description={
+            item.bio || (
+              <FormattedMessage id="list.description.default" defaultMessage="No description" />
+            )
+          }
+        />
+      </AntList.Item>
+    )}
+  />
+);
