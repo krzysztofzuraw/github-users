@@ -1,7 +1,7 @@
 import { Avatar, Button, List as AntList } from "antd";
 import * as React from "react";
 import { FormattedMessage } from "react-intl";
-import { style as tss } from "typestyle";
+import { style as tss } from "typestyle/lib";
 
 import { IUser } from "@src/models";
 

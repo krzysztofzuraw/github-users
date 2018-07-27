@@ -1,9 +1,11 @@
 import { Button, Card } from "antd";
 import * as React from "react";
-import { style } from "typestyle";
+import { FormattedMessage } from "react-intl";
+import { style } from "typestyle/lib";
 
 interface IProps {
   onClick: (lang: string) => void;
+  selectedLang: string;
 }
 
 interface IState {
@@ -21,7 +23,7 @@ const styles = {
 };
 
 export class LocaleCard extends React.Component<IProps, IState> {
-  state = { currentLang: "pl" };
+  state = { currentLang: this.props.selectedLang };
 
   handleClick = (lang: string) => {
     this.setState({ currentLang: lang });
@@ -36,7 +38,10 @@ export class LocaleCard extends React.Component<IProps, IState> {
   render() {
     const { handleClick, getButtonType } = this;
     return (
-      <Card title="Change locale" className={styles.card}>
+      <Card
+        title={<FormattedMessage id="locale.card.title" defaultMessage="Change locale" />}
+        className={styles.card}
+      >
         <div className={styles.wrapper}>
           <Button shape="circle" type={getButtonType("en")} onClick={() => handleClick("en")}>
             EN

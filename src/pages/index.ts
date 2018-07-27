@@ -1,1 +1,1 @@
-export { Main } from "./main";
+export { Main } from "@src/pages/main";

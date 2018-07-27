@@ -1,4 +1,4 @@
-import services from "./index";
+import services from "@src/services";
 
 declare module "Types" {
   type Services = typeof services;

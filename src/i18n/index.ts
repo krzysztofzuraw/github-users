@@ -1,1 +1,1 @@
-export { AppLocaleProvider } from "./providers";
+export { AppLocaleProvider } from "@src/i18n/providers";

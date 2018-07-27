@@ -1,6 +1,7 @@
 {
   "main.card.header": "Github users list",
   "list.button.reload": "Refresh",
-  "list.link.profile": "Profil",
-  "list.description.default": "No description"
+  "list.link.profile": "Profile",
+  "list.description.default": "No description",
+  "locale.card.title": "Change locale"
 }

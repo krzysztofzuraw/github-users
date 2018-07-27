@@ -2,7 +2,7 @@ import { combineEpics, Epic } from "redux-observable";
 import { Observable } from "rxjs/Observable";
 import Types from "Types";
 
-import { usersActions, usersConstants } from "../users";
+import { usersActions, usersConstants } from "@src/features/users";
 
 const fetchUsers: Epic<Types.RootAction, Types.RootState, Types.Services> = (
   action$,

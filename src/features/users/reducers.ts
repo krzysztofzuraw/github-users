@@ -2,8 +2,8 @@ import { combineReducers } from "redux";
 import Types from "Types";
 import { ActionType } from "typesafe-actions";
 
+import { usersActions, usersConstants } from "@src/features/users";
 import { IUser } from "@src/models";
-import { usersActions, usersConstants } from "../users";
 
 export type UsersState = Readonly<{
   allIds: string[];

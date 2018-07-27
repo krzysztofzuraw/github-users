@@ -20,7 +20,8 @@
         "esSpecCompliant": true
       }
     ],
-    "member-ordering": [true, { "order": "fields-first" }]
+    "member-ordering": [true, { "order": "fields-first" }],
+    "semicolon": [true, "ignore-bound-class-methods"]
   },
   "rulesDirectory": []
 }

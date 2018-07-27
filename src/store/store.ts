@@ -1,12 +1,11 @@
 import { applyMiddleware, createStore } from "redux";
 import { createEpicMiddleware } from "redux-observable";
 
+import { localesActions } from "@src/features/locales";
 import services from "@src/services";
-import rootEpic from "./root-epic";
-import rootReducer from "./root-reducer";
-import { composeEnhancers } from "./utils";
-
-import plMessages from "@locales/pl.json";
+import rootEpic from "@src/store/root-epic";
+import rootReducer from "@src/store/root-reducer";
+import { composeEnhancers } from "@src/store/utils";
 
 export const epicMiddleware = createEpicMiddleware(rootEpic, { dependencies: services });
 
@@ -16,14 +15,8 @@ const configureStore = (initialState?: object) => {
   return createStore(rootReducer, initialState!, enhancer);
 };
 
-const initialStateWithIntl = {
-  intl: {
-    defaultLocale: "en",
-    locale: "pl",
-    messages: { ...plMessages },
-  },
-};
+const store = configureStore();
 
-const store = configureStore(initialStateWithIntl);
+store.dispatch(localesActions.setDefaultLocale());
 
 export default store;

@@ -1,6 +1,6 @@
 import { Layout } from "antd";
 import * as React from "react";
-import { style } from "typestyle";
+import { style } from "typestyle/lib";
 
 import { MainCard } from "@src/components";
 import { LocaleContainer } from "@src/containers";
