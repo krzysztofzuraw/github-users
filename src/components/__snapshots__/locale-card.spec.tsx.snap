@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Locale card should render card when en language is selected 1`] = `
+Object {
+  "baseElement": <body>
+    <div>
+      <div
+        class="ant-card fzzj7d9 ant-card-bordered"
+      >
+        <div
+          class="ant-card-head"
+        >
+          <div
+            class="ant-card-head-wrapper"
+          >
+            <div
+              class="ant-card-head-title"
+            >
+              <span>
+                Change locale
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-card-body"
+        >
+          <div
+            class="f1ubk0hm"
+          >
+            <button
+              class="ant-btn ant-btn-primary ant-btn-circle"
+              type="button"
+            >
+              <span>
+                EN
+              </span>
+            </button>
+            <button
+              class="ant-btn ant-btn-default ant-btn-circle"
+              type="button"
+            >
+              <span>
+                PL
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ant-card fzzj7d9 ant-card-bordered"
+    >
+      <div
+        class="ant-card-head"
+      >
+        <div
+          class="ant-card-head-wrapper"
+        >
+          <div
+            class="ant-card-head-title"
+          >
+            <span>
+              Change locale
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-card-body"
+      >
+        <div
+          class="f1ubk0hm"
+        >
+          <button
+            class="ant-btn ant-btn-primary ant-btn-circle"
+            type="button"
+          >
+            <span>
+              EN
+            </span>
+          </button>
+          <button
+            class="ant-btn ant-btn-default ant-btn-circle"
+            type="button"
+          >
+            <span>
+              PL
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Locale card should render card when pl language is selected 1`] = `
+Object {
+  "baseElement": <body>
+    <div>
+      <div
+        class="ant-card fzzj7d9 ant-card-bordered"
+      >
+        <div
+          class="ant-card-head"
+        >
+          <div
+            class="ant-card-head-wrapper"
+          >
+            <div
+              class="ant-card-head-title"
+            >
+              <span>
+                Change locale
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ant-card-body"
+        >
+          <div
+            class="f1ubk0hm"
+          >
+            <button
+              class="ant-btn ant-btn-default ant-btn-circle"
+              type="button"
+            >
+              <span>
+                EN
+              </span>
+            </button>
+            <button
+              class="ant-btn ant-btn-primary ant-btn-circle"
+              type="button"
+            >
+              <span>
+                PL
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ant-card fzzj7d9 ant-card-bordered"
+    >
+      <div
+        class="ant-card-head"
+      >
+        <div
+          class="ant-card-head-wrapper"
+        >
+          <div
+            class="ant-card-head-title"
+          >
+            <span>
+              Change locale
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="ant-card-body"
+      >
+        <div
+          class="f1ubk0hm"
+        >
+          <button
+            class="ant-btn ant-btn-default ant-btn-circle"
+            type="button"
+          >
+            <span>
+              EN
+            </span>
+          </button>
+          <button
+            class="ant-btn ant-btn-primary ant-btn-circle"
+            type="button"
+          >
+            <span>
+              PL
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -27,6 +27,10 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
+"@types/jest-each@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@types/jest-each/-/jest-each-0.3.2.tgz#8a741b6f40b5fc7ef075aa9d1987316a7a9ce2fd"
+
 "@types/jest@^23.3.1":
   version "23.3.1"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.1.tgz#a4319aedb071d478e6f407d1c4578ec8156829cf"
