@@ -18,6 +18,10 @@ const changeLocale: Epic<Types.RootAction, Types.RootState, Types.Services> = (
     switch (action.type) {
       case localesConstants.CHANGE_LOCALES:
         return localesService.changeLocale(action.payload.language);
+
+      default:
+        // TODO: ignore empty values
+        return localesService.changeLocale("en");
     }
   });
 

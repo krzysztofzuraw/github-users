@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component should render empty list when there is no items to load 1`] = `
+Object {
+  "baseElement": <body>
+    <div>
+      <div
+        class="ant-list ant-list-split ant-list-something-after-last-item"
+      >
+        <div
+          class="ant-spin-nested-loading"
+        >
+          <div
+            class="ant-spin-container"
+          >
+            <div
+              class="ant-list-empty-text"
+            >
+              No data
+            </div>
+          </div>
+        </div>
+        <div
+          class="f9r8yry"
+        >
+          <button
+            class="ant-btn"
+            type="button"
+          >
+            <span>
+              Refresh
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ant-list ant-list-split ant-list-something-after-last-item"
+    >
+      <div
+        class="ant-spin-nested-loading"
+      >
+        <div
+          class="ant-spin-container"
+        >
+          <div
+            class="ant-list-empty-text"
+          >
+            No data
+          </div>
+        </div>
+      </div>
+      <div
+        class="f9r8yry"
+      >
+        <button
+          class="ant-btn"
+          type="button"
+        >
+          <span>
+            Refresh
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`List component should render items list 1`] = `
+Object {
+  "baseElement": <body>
+    <div>
+      <div
+        class="ant-list ant-list-split ant-list-something-after-last-item"
+      >
+        <div
+          class="ant-spin-nested-loading"
+        >
+          <div
+            class="ant-spin-container"
+          >
+            <div
+              class="ant-list-item"
+            >
+              <div
+                class="ant-list-item-meta"
+              >
+                <div
+                  class="ant-list-item-meta-avatar"
+                >
+                  <span
+                    class="ant-avatar ant-avatar-circle ant-avatar-image"
+                  >
+                    <img
+                      src="https://"
+                    />
+                  </span>
+                </div>
+                <div
+                  class="ant-list-item-meta-content"
+                >
+                  <h4
+                    class="ant-list-item-meta-title"
+                  >
+                    user
+                  </h4>
+                  <div
+                    class="ant-list-item-meta-description"
+                  >
+                    bio
+                  </div>
+                </div>
+              </div>
+              <ul
+                class="ant-list-item-action"
+              >
+                <li>
+                  <a
+                    href="https://"
+                  >
+                    <span>
+                      Profile
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="f9r8yry"
+        >
+          <button
+            class="ant-btn"
+            type="button"
+          >
+            <span>
+              Refresh
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ant-list ant-list-split ant-list-something-after-last-item"
+    >
+      <div
+        class="ant-spin-nested-loading"
+      >
+        <div
+          class="ant-spin-container"
+        >
+          <div
+            class="ant-list-item"
+          >
+            <div
+              class="ant-list-item-meta"
+            >
+              <div
+                class="ant-list-item-meta-avatar"
+              >
+                <span
+                  class="ant-avatar ant-avatar-circle ant-avatar-image"
+                >
+                  <img
+                    src="https://"
+                  />
+                </span>
+              </div>
+              <div
+                class="ant-list-item-meta-content"
+              >
+                <h4
+                  class="ant-list-item-meta-title"
+                >
+                  user
+                </h4>
+                <div
+                  class="ant-list-item-meta-description"
+                >
+                  bio
+                </div>
+              </div>
+            </div>
+            <ul
+              class="ant-list-item-action"
+            >
+              <li>
+                <a
+                  href="https://"
+                >
+                  <span>
+                    Profile
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="f9r8yry"
+      >
+        <button
+          class="ant-btn"
+          type="button"
+        >
+          <span>
+            Refresh
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

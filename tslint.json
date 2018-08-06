@@ -21,7 +21,8 @@
       }
     ],
     "member-ordering": [true, { "order": "fields-first" }],
-    "semicolon": [true, "ignore-bound-class-methods"]
+    "semicolon": [true, "ignore-bound-class-methods"],
+    "object-literal-sort-keys": false
   },
   "rulesDirectory": []
 }

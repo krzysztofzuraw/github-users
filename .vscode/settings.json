@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "antd",
+        "devtool",
+        "repos",
+        "typestyle"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}
