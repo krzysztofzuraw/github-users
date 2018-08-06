@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Locale card should render card when en language is selected 1`] = `
+exports[`Locale card component should render card when en language is selected 1`] = `
 Object {
   "baseElement": <body>
     <div>
@@ -128,7 +128,7 @@ Object {
 }
 `;
 
-exports[`Locale card should render card when pl language is selected 1`] = `
+exports[`Locale card component should render card when pl language is selected 1`] = `
 Object {
   "baseElement": <body>
     <div>

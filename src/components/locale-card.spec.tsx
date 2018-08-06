@@ -7,7 +7,7 @@ import { componentWithIntl } from "@src/utils";
 
 afterEach(cleanup);
 
-describe("Locale card", () => {
+describe("Locale card component", () => {
   each([["pl"], ["en"]]).test("should render card when %s language is selected", (lang: string) => {
     const component = render(
       componentWithIntl(<LocaleCard selectedLang={lang} onClick={jest.fn()} />)
