@@ -3,7 +3,7 @@ import * as React from "react";
 import { style } from "typestyle/lib";
 
 import { MainCard } from "@src/components";
-import { LocaleContainer } from "@src/containers";
+import { LocaleContainerConnected } from "@src/containers";
 
 import "@styles/antd.default.less";
 
@@ -21,7 +21,7 @@ export const MainLayout: React.SFC = () => {
   return (
     <Layout className={styles.layout}>
       <MainCard />
-      <LocaleContainer />
+      <LocaleContainerConnected />
     </Layout>
   );
 };

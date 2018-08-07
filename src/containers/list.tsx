@@ -16,7 +16,7 @@ const mapDispatchToProps = {
 
 type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps;
 
-class Component extends React.Component<Props> {
+export class ListContainer extends React.Component<Props> {
   componentDidMount() {
     this.props.getUsers();
   }
@@ -27,4 +27,4 @@ class Component extends React.Component<Props> {
   }
 }
 
-export const ListContainer = connect(mapStateToProps, mapDispatchToProps)(Component);
+export default connect(mapStateToProps, mapDispatchToProps)(ListContainer);

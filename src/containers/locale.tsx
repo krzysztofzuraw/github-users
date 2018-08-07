@@ -12,12 +12,11 @@ const mapStateToProps = (state: Types.RootState) => ({
 
 const mapDispatchToProps = {
   changeLocale: localesActions.changeLocale,
-  setDefaultLocale: localesActions.setDefaultLocale,
 };
 
 type Props = ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps;
 
-class Component extends React.Component<Props> {
+export class LocaleContainer extends React.Component<Props> {
   handleClick = (lang: string) => {
     const { changeLocale } = this.props;
     const model = new Locale(lang);
@@ -28,4 +27,4 @@ class Component extends React.Component<Props> {
     return <LocaleCard onClick={this.handleClick} selectedLang={this.props.selectedLang} />;
   }
 }
-export const LocaleContainer = connect(mapStateToProps, mapDispatchToProps)(Component);
+export default connect(mapStateToProps, mapDispatchToProps)(LocaleContainer);
