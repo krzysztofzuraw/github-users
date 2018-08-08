@@ -1,1 +1,1 @@
-export { default as componentWithIntl } from "@src/utils/tests";
+export { componentWithIntl, createMockStoreWithEpic } from "@src/utils/tests";

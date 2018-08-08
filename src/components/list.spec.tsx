@@ -16,7 +16,7 @@ describe("List component", () => {
   });
 
   it("should render items list", () => {
-    const users = User.create({
+    const user = User.create({
       avatar_url: "https://",
       bio: "bio",
       blog: "blog",
@@ -27,7 +27,7 @@ describe("List component", () => {
       login: "user",
     });
     const component = render(
-      componentWithIntl(<List items={[users]} loading={false} onReload={jest.fn()} />)
+      componentWithIntl(<List items={[user]} loading={false} onReload={jest.fn()} />)
     );
     expect(component).toMatchSnapshot();
   });

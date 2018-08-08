@@ -5,7 +5,7 @@ module.exports = {
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  setupFiles: ["<rootDir>/jest.stubs.js"],
+  setupFiles: ["<rootDir>/jest.stubs.js", "<rootDir>/src/rxjs-imports.ts"],
   testURL: "http://localhost/",
   moduleNameMapper: {
     "@src/(.*)$": "<rootDir>/src/$1",

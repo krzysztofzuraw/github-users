@@ -1,7 +1,7 @@
+import "@src/rxjs-imports";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import "rxjs";
 
 import { Main } from "@src/pages";
 import store from "@src/store";
