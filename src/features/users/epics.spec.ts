@@ -4,7 +4,7 @@ import { User } from "@src/models";
 import { createMockStoreWithEpic } from "@src/utils";
 import { userEpic, usersActions } from ".";
 
-describe("Feature - users", () => {
+describe("Feature - users - epics", () => {
   describe("fetchUsers", () => {
     it("should fetch users from github", () => {
       const user = User.create({
