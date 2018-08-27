@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Users reducer should match snapshot for inital state 1`] = `
+Object {
+  "allIds": Array [],
+  "byId": Object {},
+  "isFetching": false,
+}
+`;

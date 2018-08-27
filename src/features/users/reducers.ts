@@ -9,7 +9,6 @@ export type UsersState = Readonly<{
   allIds: string[];
   byId: { [id: string]: IUser };
   isFetching: boolean;
-  error: null | string;
 }>;
 
 export type UsersActions = ActionType<typeof usersActions>;
