@@ -1,6 +1,8 @@
 "use strict";
 const paths = require("./paths");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   bail: true,
@@ -14,6 +16,14 @@ module.exports = {
     rules: [
       { test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ },
       { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      {
+        test: /\.less$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "less-loader", options: { javascriptEnabled: true } },
+        ],
+      },
     ],
   },
   output: {
@@ -38,9 +48,8 @@ module.exports = {
         minifyURLs: true,
       },
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: { warnings: false, comparisons: false },
-      output: { comments: false, ascii_only: true },
-    }),
   ],
+  optimization: {
+    minimizer: [new UglifyJsPlugin()],
+  },
 };

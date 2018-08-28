@@ -1,6 +1,5 @@
 import { Locale, User } from "@src/models";
 import { rootReducer } from "@src/store";
-import { Types } from "Types";
 import { usersSelectors } from ".";
 
 describe("Users Selectors", () => {
