@@ -10,8 +10,7 @@
     "reinstall": "rm -rf node_modules && yarn install",
     "test": "jest --config jest.config.js",
     "test:watch": "jest --config jest.config.js --watch",
-    "test:update": "jest --config jest.config.js --update",
-    "now-start": "serve --single ./build"
+    "test:update": "jest --config jest.config.js --update"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -59,7 +58,6 @@
     "redux": "3.7.2",
     "redux-observable": "^0.19.0",
     "reselect": "^3.0.1",
-    "serve": "^10.0.0",
     "typesafe-actions": "^2.0.4",
     "typestyle": "^2.0.1",
     "uuid": "^3.2.1"
